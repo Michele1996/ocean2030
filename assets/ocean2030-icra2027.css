@@ -1,0 +1,109 @@
+/* OCEAN2030 × ICRA 2027: reference-style layout, Seoul 2027-inspired colour system. */
+:root {
+ --primary-navy:#26143f; --secondary-navy:#322052; --deep-ocean-blue:#2c1656;
+ --accent-blue:#04aab4; --accent-teal:#007d52; --accent-gold:#ffa300;
+ --text-dark:#263046;--text-light:#627183; --glass-bg:rgba(44,22,86,.94);--glass-border:rgba(255,255,255,.18);
+}
+body{background:#ffffff}
+header{box-shadow:0 1px 14px rgba(37,21,69,.07)}
+header.scrolled{background:#2c1656}
+.nav-container{max-width:1200px;padding: .64rem 2rem;min-height:70px}
+.brand{display:flex;align-items:center;gap:.65rem;color:white}
+.brand:hover{color:white}
+.brand-emblem{width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 2px 2px rgba(0,0,0,.14))}
+.brand .logo-text{font-size:1.2rem;line-height:1;letter-spacing:-.02em;display:flex;flex-direction:column;align-items:flex-start}
+.brand-number{color:#77decb}
+.brand .logo-text{display:block}
+.brand .logo-text small{display:block;margin-top:.3rem;letter-spacing:.19em;font-size:.52rem;font-weight:500;color:#c6f1e9}
+.nav-links{gap:1.35rem}.nav-links a{font-size:.94rem}.nav-links a.active,.nav-links a:hover{color:#78e0ce;border-bottom-color:#ffa300}
+.hero{height:52vh;min-height:380px;}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(37,17,72,.5),rgba(3,87,104,.14) 65%,rgba(0,100,80,.24));z-index:1;pointer-events:none}
+.hero-bg img{filter:brightness(.52) contrast(1.03) saturate(1.2)}
+.hero-content{padding-top:4.4rem}.hero-title{font-size:clamp(2.55rem,4.1vw,3.75rem);letter-spacing:-.04em}
+.hero-title span{color:#d8fff6}.hero-tagline{color:#ffcb5b}.hero-details{gap:.75rem}
+.hero-details span{border:1px solid rgba(255,255,255,.18);background:rgba(20,20,58,.34);font-size:.9rem}
+.joint-banner.conference-banner{background:linear-gradient(111deg,#f9f6ff 0%,#f3faf9 60%,#f5fcf9 100%);color:var(--text-dark);padding:1.8rem 2rem 2rem;border-bottom:4px solid #00acaf}
+.conference-banner-inner{max-width:1136px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3rem;align-items:center;text-align:left}
+.conference-copy .joint-banner-title{color:#2c1656;margin-bottom:.7rem}.conference-copy .joint-banner-text{color:#49576b;font-size:1rem;line-height:1.55;margin-bottom:1rem}
+.conference-copy .joint-banner-eyebrow{font-size:.7rem;color:#087f74;letter-spacing:.13em;display:block;margin-bottom:.5rem}
+.conference-copy .joint-banner-link{background:#2c1656;color:white;padding:.58rem 1rem;border-radius:7px;font-size:.9rem}.conference-copy .joint-banner-link:hover{background:#007c54}
+.conference-logo-frame{border:1px solid #e8eaf0;background:white;padding:1.2rem 1.5rem;border-radius:14px;min-height:150px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md)}
+.official-icra-logo{width:100%;height:auto;max-height:146px;object-fit:contain;display:block}
+.icra-logo-fallback{text-align:center;color:#2c1656}.icra-logo-fallback b{font:800 2.35rem 'Outfit',sans-serif;display:block;color:#772583}.icra-logo-fallback em{color:#ffa300;font-style:normal}.icra-logo-fallback span,.icra-logo-fallback small{display:block}.icra-logo-fallback small{color:#7d8999;font-size:.72rem}
+.container{padding-top:3rem;padding-bottom:3rem}.major-section{margin-bottom:4rem;scroll-margin-top:85px}
+.section-title{margin-bottom:1.25rem}.section-title::after{background:linear-gradient(90deg,#00abae 0 55%,#e7188f 55% 100%);width:66px;height:4px}
+.lead{color:#344155;font-size:1.16rem;line-height:1.65;margin-bottom:.7rem;max-width:1000px}.intro-note{color:#647184;font-size:.98rem;max-width:1000px}
+.overview-responsive-container{margin-top:1.7rem;gap:1.5rem}.overview-card{border-left-color:#00aab0;padding:1.2rem 1.4rem}
+.overview-card:nth-of-type(3){border-left-color:#e81c8e}.overview-card h3{font-size:1.1rem}
+.overview-gallery-column .overview-img-container img{border-radius:14px}
+.section-kicker{font-size:.75rem;letter-spacing:.08em;color:#008975;font-weight:700;text-transform:uppercase;margin:-.35rem 0 .6rem}
+.section-lead{max-width:860px;color:#657187;margin-bottom:1.5rem}
+.speakers-grid{gap:1rem;margin-top:1.3rem}.speaker-card{padding:1.4rem 1.5rem;gap:.7rem;border-radius:14px}
+.speaker-header{gap:1rem}.speaker-avatar{width:50px;height:50px}.candidate-icon{background:#ede8fa;color:#6d2987;font-size:1.65rem}
+.speaker-meta h3{font-size:1.16rem}.speaker-bio{font-size:.94rem;color:#596779}
+.speaker-meta .speaker-affiliation{color:#087f75;font-size:.82rem}
+.cfp-card{padding:1.5rem 1.8rem!important;background:linear-gradient(110deg,#f9f6ff,#f4fdfa)!important;border-left:5px solid #00aab0!important;margin-bottom:1.5rem}
+.cfp-card h3{font-size:1.45rem;margin:.7rem 0}.cfp-card p{color:#5e6c80;margin:.55rem 0}
+.cfp-status{font-size:.77rem;display:inline-flex;border-radius:100px;background:#dceef0;color:#006c76;padding:.3rem .65rem;font-weight:700;text-transform:uppercase;letter-spacing:.045em}
+.cfp-details{display:flex;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:#556277;margin-top:1rem}
+.topics-grid{gap:1rem;margin-top:1rem}.topic-item{padding:1.25rem}.topic-icon{color:#0e967f}
+.awards-note{margin-top:1rem;display:flex;gap:1rem;align-items:baseline;background:#fcf5f9;border-left:3px solid #e81789;border-radius:6px;padding:1rem;color:#555c72}.awards-note strong{color:#8a1d64}
+.schedule-panel-heading{background:linear-gradient(90deg,#2c1656,#4c2181)}
+.schedule-item{grid-template-columns:110px minmax(0,1fr);padding:.78rem 0}.schedule-clock{font-size:.79rem}.schedule-content{border-left-color:#00adb4}
+.schedule-list{padding:.35rem 1rem}.schedule-kind{color:#008b7a}.schedule-section{margin-bottom:4rem}
+.programme-note{font-size:.83rem;color:#6c778a;margin-top:1rem}
+.authors-section .organizers-grid{grid-template-columns:repeat(4,1fr);gap:1rem}
+.person-card{border:1px solid #e9eaf0;border-radius:14px;padding-bottom:.55rem;box-shadow:0 2px 9px rgba(28,46,66,.035);background:#fff}
+.person-photo{width:108px;height:108px;border:4px solid #fff;outline:2px solid #d8edf0;background:linear-gradient(140deg,#3b1b67,#008c91);margin:.95rem auto 0}
+.person-initials{display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;font-family:var(--font-heading);font-weight:700;width:100%;height:100%}
+.person-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.organizer-info{padding:.7rem .6rem}.organizer-name{font-size:1rem}
+.organizer-affiliation{min-height:2rem;margin-bottom:.25rem}.quiet{color:#a8afbc}.person-link{font-size:.78rem}
+.contact-panel{margin-top:1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.4rem;border-radius:12px;background:#f5faf9;border:1px solid #d8eeeb}.contact-panel strong{font:700 1rem var(--font-heading);color:#2c1656}.contact-panel p{color:#5d697a;font-size:.9rem}.contact-panel a{font-weight:700}
+.footer-layout{display:flex;justify-content:space-between;align-items:center;gap:1.5rem}.footer-layout p{color:#516073}.footer-muted{font-size:.85rem;margin-top:.6rem;max-width:700px}.footer-logo{font:700 1rem var(--font-heading);color:#622885}
+@media(max-width:900px){.nav-links{gap:1rem}.nav-links a{font-size:.87rem}.authors-section .organizers-grid{grid-template-columns:repeat(3,1fr)}.conference-banner-inner{gap:1.5rem}}
+@media(max-width:768px){.nav-container{padding:.6rem 1rem}.brand-emblem{width:40px;height:40px}.nav-links{gap:1.5rem}.hero{min-height:380px;height:auto;padding:4rem 0 1.7rem}.hero-content{padding-top:2rem}.hero-title{font-size:2.5rem}.hero-details{gap:.4rem}.hero-details span{font-size:.75rem}.conference-banner-inner{grid-template-columns:1fr;gap:1rem}.conference-logo-frame{min-height:105px}.official-icra-logo{max-height:130px}.authors-section .organizers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.speaker-card{padding:1.15rem}.topics-grid{grid-template-columns:1fr}.footer-layout{display:block}.footer-logo{display:inline-block;margin-top:1rem}}
+@media(max-width:440px){.hero-title{font-size:2.16rem}.hero-details{gap:.3rem}.hero-details span{padding:.38rem .68rem}.authors-section .organizers-grid{gap:.6rem}.person-card .organizer-name{font-size:.9rem}.organizer-affiliation{font-size:.77rem}.contact-panel{flex-direction:column;align-items:flex-start}.schedule-panel-heading{display:flex}.schedule-item{grid-template-columns:1fr}}
+
+.official-icra-logo[hidden],.icra-logo-fallback[hidden]{display:none!important}
+
+@media(max-width:768px){.mobile-only-interleave-img img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}}
+
+/* Speaker portraits: use the same auto-loading mechanism as organizer portraits. */
+.speaker-photo{width:76px;height:76px;position:relative;flex-shrink:0;background:linear-gradient(145deg,#43236e,#008e90);color:#fff;outline:2px solid #d8edf0;border:3px solid #fff;overflow:hidden;border-radius:50%;}
+.speaker-initials{display:grid;place-items:center;width:100%;height:100%;font:700 1.18rem var(--font-heading);letter-spacing:.025em;}
+.speaker-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.speaker-photo.has-photo .speaker-initials{display:none;}
+.speaker-talk-title{border-top:1px solid #edf0f5;padding-top:.6rem;margin-top:auto;color:#657187;font-size:.88rem;}
+.speaker-talk-title strong{color:#2c1656;font-family:var(--font-heading);}
+@media(max-width:440px){.speaker-photo{width:65px;height:65px}.speaker-initials{font-size:1rem}}
+
+/* Five joint speaker sessions, each with two speakers and a single TBD talk. */
+.speaker-pairs-grid{display:grid;grid-template-columns:1fr;gap:1.15rem;margin-top:1.4rem;}
+.speaker-pair{display:grid;grid-template-columns:minmax(175px,210px) minmax(0,1fr);overflow:hidden;border-radius:16px;border:1px solid #dfe6ef;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth);}
+.speaker-pair:hover{box-shadow:var(--shadow-md);border-color:rgba(27,146,166,.4);}
+.pair-heading{padding:1.25rem 1.3rem;background:linear-gradient(145deg,#eef8f7 0%,#f2f1fb 100%);border-right:1px solid #e2e8f0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:.45rem;}
+.pair-index{color:#623b82;font-size:.67rem;letter-spacing:.12em;font-weight:800;font-family:var(--font-heading);}
+.pair-heading h3{font-size:1.34rem;margin:0;overflow-wrap:anywhere;}
+.pair-status{font-size:.78rem;color:#5b6979;line-height:1.35;margin:0;}
+.pair-talk{display:inline-flex;align-items:center;gap:.35rem;margin-top:.4rem;color:#4b5870;font-size:.82rem;line-height:1.3;flex-wrap:wrap;}
+.pair-talk strong{border-radius:6px;padding:.2rem .5rem;background:#fff;color:#5c327b;border:1px solid #ddcce7;font-family:var(--font-heading);font-size:.8rem;}
+.pair-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));min-width:0;}
+.pair-person{min-width:0;padding:1.25rem 1.35rem;display:flex;flex-direction:column;justify-content:center;gap:.55rem;}
+.pair-person + .pair-person{border-left:1px solid #edf0f4;}
+.pair-person .speaker-header{gap:.85rem;align-items:center;min-width:0;}
+.pair-person .speaker-meta{min-width:0;}
+.pair-person .speaker-meta h3{font-size:1.08rem;line-height:1.22;margin:0 0 .26rem;overflow-wrap:anywhere;}
+.pair-person .speaker-meta .speaker-affiliation{font-size:.82rem;line-height:1.3;margin:0;overflow-wrap:anywhere;}
+.pair-person .speaker-bio{font-size:.83rem;line-height:1.38;color:#64748b;margin:0;}
+.pair-person .speaker-photo{width:69px;height:69px;}
+@media(max-width:960px){.speaker-pair{grid-template-columns:minmax(145px,175px) minmax(0,1fr)}.pair-person{padding:1rem}.pair-person .speaker-header{gap:.6rem}.pair-person .speaker-photo{width:60px;height:60px}}
+@media(max-width:700px){.speaker-pair{grid-template-columns:1fr}.pair-heading{border-right:0;border-bottom:1px solid #e2e8f0;padding:1rem 1.15rem;gap:.25rem}.pair-heading h3{font-size:1.22rem}.pair-people{grid-template-columns:repeat(2,minmax(0,1fr))}.pair-person .speaker-header{flex-direction:column;text-align:center;align-items:center}.pair-person .speaker-bio{text-align:center}.pair-person{padding:.95rem}.pair-person .speaker-photo{width:66px;height:66px}}
+@media(max-width:410px){.pair-people{grid-template-columns:1fr}.pair-person .speaker-header{flex-direction:row;text-align:left}.pair-person .speaker-bio{text-align:left}.pair-person+.pair-person{border-left:0;border-top:1px solid #edf0f4}.pair-heading{flex-direction:row;align-items:center;flex-wrap:wrap;column-gap:.65rem}.pair-index{width:100%}.pair-talk{margin-top:.1rem}.pair-person{padding:.9rem 1rem}}
+
+/* Research photography update — fallback backgrounds when network image is blocked. */
+.hero-bg {background: radial-gradient(circle at 55% 75%, #086b83, #12384f 60%, #0c1f38);} 
+.overview-img-container {background:linear-gradient(145deg,#0b576c,#0a2445)}
+.overview-img-container img {font-size:0; color:transparent;}
+
+/* Hide placeholder initials whenever an actual portrait successfully loads. */
+.person-photo.has-photo .person-initials {display:none;}

@@ -107,3 +107,9 @@ header.scrolled{background:#2c1656}
 
 /* Hide placeholder initials whenever an actual portrait successfully loads. */
 .person-photo.has-photo .person-initials {display:none;}
+
+/* Pending invited speakers: neutral profile icons; no real portraits until confirmation. */
+.anonymous-speaker-icon {background:linear-gradient(140deg,#e1f6f2,#e9e6f8);color:#188d9c;display:flex;align-items:center;justify-content:center;border:3px solid #fff;}
+.anonymous-speaker-icon svg {width:35px;height:35px;flex-shrink:0;}
+#speakers .pair-person .speaker-affiliation {color:#736a85;font-size:.78rem;font-style:italic;}
+#speakers .section-lead strong {color:#593c7b;}

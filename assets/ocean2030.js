@@ -1,6 +1,6 @@
 // Ocean2030 people portraits — robust local-first loader.
 // Attach the image before setting src. Detached lazy images might not load
-// in all browsers, which previously kept Kevin and Christine's photos hidden.
+// in all browsers, which previously kept certain local portraits hidden.
 document.querySelectorAll('[data-photo]').forEach((node) => {
   const local = node.getAttribute('data-photo');
   const remote = node.getAttribute('data-photo-remote');
